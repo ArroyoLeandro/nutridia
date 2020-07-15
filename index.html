@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrida</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <sidebar class="sidebar">
+      <ul class="sidebar-nav">
+        <li class="nav-item side-item">
+          <a class="nav-link side-link" href="#">
+           <img src="assets/img/teleconsulta.png" alt="" class="imgSide">
+            <span class="link-text">Teleconsulta</span>
+          </a>
+        </li>
+        <li class="nav-item side-item">
+          <a class="nav-link side-link" href="#">
+           <img src="assets/img/visita.png" alt="" class="imgSide2" >
+            <span class="link-text">Venta Domiciliarias</span>
+          </a>
+        </li>
+        <li class="nav-item side-item">
+          <a class="nav-link side-link" href="#">
+           <img src="assets/img/informacion.png" alt="" class="imgSide">
+            <span class="link-text">Informacion</span>
+          </a>
+        </li>
+        <li class="nav-item side-item">
+          <a class="nav-link side-link" href="#">
+           <img src="assets/img/turnos.png" alt="" class="imgSide">
+            <span class="link-text">Turnos</span>
+          </a>
+        </li>
+        <li class="nav-item side-item">
+          <a class="nav-link side-link" href="#">
+           <img src="assets/img/atencion.png" alt="" class="imgSide">
+            <span class="link-text">Atencion al asociado</span>
+          </a>
+        </li>
+        <li class="nav-item side-item">
+          <a class="nav-link side-link" href="#">
+           <img src="assets/img/productos.png" alt="" class="imgSide">
+            <span class="link-text">Productos</span>
+          </a>
+        </li>
+      </ul>
+  </sidebar>
+
+  <header>
+    <div class="mt-4 d-block d-lg-none d-flex flex-direction-row float-right navButtonMobile">
+      <a class="" href="register.html">
+        <img src="assets/img/registrate.png" alt="Imagen registrate" class="img-fluid">
+      </a>
+      <a class="" href="login.html">
+        <img src="assets/img/inicie_sesion.png" alt="Imagen Inicio sesion" class="img-fluid">
+      </a>
+    </div>
+    <div style="clear:both"></div>
+    <!-- Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item pl-lg-5 active">
+            <a class="nav-link" href="#">
+              <img src="assets/img/Inicio.png" alt="Imagen Inicio" class="img-fluid">
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">
+              <img src="assets/img/Quienes_somos.png" alt="Imagen quienes somos" class="img-fluid">
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">
+              <img src="assets/img/como_funciona.png" alt="Imagen como funciona" class="img-fluid">
+            </a>
+          </li>
+          <li class="nav-item mr-lg-5">
+            <a class="nav-link" href="#">
+              <img src="assets/img/contacto.png" alt="Imagen Inicio" class="img-fluid">
+            </a>
+          </li>
+        </ul>
+        <div class="navButton d-none d-lg-flex">
+          <a class="" href="register.html">
+            <img src="assets/img/registrate.png" alt="Imagen registrate" class="img-fluid">
+          </a>
+          <a class="" href="login.html">
+            <img src="assets/img/inicie_sesion.png" alt="Imagen Inicio sesion" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+    <!-- Slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cardSlide">
+            <div class="">
+              <h5 class="titleCard">TELEMEDICINA</h5>
+              <p class="contentCard d-none d-md-block ">
+                Comunicacion y consulta a distancia de servicios de salud integrados
+              </p>
+              <div class="buttonsCard">
+                <a class="d-flex justify-content-center flex-direction-column">
+                  <img src="assets/img/slide/telemedicina.png" alt="" class="img-icon">
+                </a>
+                <a href="#" class="d-flex justify-content-center mt-4 flex-direction-column">
+                  <img src="assets/img/mas_informacion.png" alt="" class="img-info">
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="w-100 d-none d-md-block" src="assets/img/slide/slide_01.jpg" alt="First slide">
+          <img class="w-100 d-md-none" src="assets/img/slide/slide_01_mobile.jpg" alt="First slide">
+          <div class="footerSlide">
+            <span class="text-footer">
+              LA PLATAFORMA DIGITAL PARA PREVENIR Y CONTROLAR LA DIABETES
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cardSlide">
+            <div class="">
+              <h5 class="titleCard resize">HISTORIA CLINICA DIGITAL</h5>
+              <p class="contentCard  d-none d-md-block ">
+                Incluye el diagnostico, tratamiento, control y seguimiento, permitiendo una mejor articulacion del
+                equipo de salud
+              </p>
+              <div class="buttonsCard">
+                <a class="d-flex justify-content-center">
+                  <img src="assets/img/slide/historia_clinica.png" alt="" class="img-icon">
+                </a>
+                <a href="#" class="d-flex justify-content-center mt-4">
+                  <img src="assets/img/mas_informacion.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="w-100 d-none d-md-block" src="assets/img/slide/slide_02.jpg" alt="Second slide">
+          <img class="d-md-none w-100" src="assets/img/slide/slide_02_mobile.jpg" alt="Second slide">
+          <div class="footerSlide">
+            <span class="text-footer">
+              LA PLATAFORMA DIGITAL PARA PREVENIR Y CONTROLAR LA DIABETES
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cardSlide">
+            <div class="">
+              <h5 class="titleCard resize">CALCULADORA NUTRIDIA</h5>
+              <p class="contentCard  d-none d-md-block ">
+                Permite preparar un menu libre generando calculos automaticos
+              </p>
+              <div class="buttonsCard">
+                <a class="d-flex justify-content-center">
+                  <img src="assets/img/slide/calculadora.png" alt="" class="img-icon">
+                </a>
+                <a href="#" class="d-flex justify-content-center mt-4">
+                  <img src="assets/img/mas_informacion.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="w-100 d-none d-md-block" src="assets/img/slide/slide_03.jpg" alt="Third slide">
+          <img class="d-md-none w-100" src="assets/img/slide/slide_03_mobile.jpg" alt="Third slide">
+          <div class="footerSlide">
+            <span class="text-footer">
+              LA PLATAFORMA DIGITAL PARA PREVENIR Y CONTROLAR LA DIABETES
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cardSlide">
+            <div class="">
+              <h5 class="titleCard resize" style="margin: 15% 0 0 0 !important;">MONITOREO CARDIOMETABOLICO AMBULATORIO
+              </h5>
+              <p class="contentCard  d-none d-md-block ">
+                Le permite al paciente intercambiar los datos clinicos en tiempo real
+              </p>
+              <div class="buttonsCard">
+                <a class="d-flex justify-content-center">
+                  <img src="assets/img/slide/monitoreo.png" alt="" class="img-icon">
+                </a>
+                <a href="#" class="d-flex justify-content-center mt-4">
+                  <img src="assets/img/mas_informacion.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="w-100 d-none d-md-block" src="assets/img/slide/slide_04.jpg" alt="four slide">
+          <img class="d-md-none w-100" src="assets/img/slide/slide_04_mobile.jpg" alt="four slide">
+          <div class="footerSlide">
+            <span class="text-footer">
+              LA PLATAFORMA DIGITAL PARA PREVENIR Y CONTROLAR LA DIABETES
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cardSlide">
+            <div class="">
+              <h5 class="titleCard resize">DIETETICA PENSADA PARA DIABETES</h5>
+              <p class="contentCard  d-none d-md-block ">
+                Diseñamos un plan de alimentacion de acuerdo a la necesidad de cada persona en sociedad con
+                restaurantes.
+              </p>
+              <div class="buttonsCard">
+                <a class="d-flex justify-content-center">
+                  <img src="assets/img/slide/dietetica.png" alt="" class="img-icon">
+                </a>
+                <a href="#" class="d-flex justify-content-center mt-4 mb-3">
+                  <img src="assets/img/mas_informacion.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="w-100 d-none d-md-block" src="assets/img/slide/slide_05.jpg" alt="five slide">
+          <img class="w-100 d-md-none" src="assets/img/slide/slide_05_mobile.jpg" alt="five slide">
+          <div class="footerSlide">
+            <span class="text-footer">
+              LA PLATAFORMA DIGITAL PARA PREVENIR Y CONTROLAR LA DIABETES
+            </span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cardSlide">
+            <div class="">
+              <h5 class="titleCard resize">RESTAURANT ADHERIDOS</h5>
+              <p class="contentCard  d-none d-md-block ">
+                Cuenta con la existencia de etiquetas nutricionales personalizadas para los usuarios
+              </p>
+              <div class="buttonsCard">
+                <a class="d-flex justify-content-center">
+                  <img src="assets/img/slide/restaurante.png" alt="" class="img-icon">
+                </a>
+                <a href="#" class="d-flex justify-content-center mt-4">
+                  <img src="assets/img/mas_informacion.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="w-100 d-none d-md-block" src="assets/img/slide/slide_06.jpg" alt="six slide">
+          <img class="w-100 d-md-none" src="assets/img/slide/slide_06_mobile.jpg" alt="six slide">
+          <div class="footerSlide">
+            <span class="text-footer">
+              LA PLATAFORMA DIGITAL PARA PREVENIR Y CONTROLAR LA DIABETES
+            </span>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <img class="d-block h-100" src="assets/img/barra_iz.png">
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <img class="d-block h-100" src="assets/img/barra_dr.png">
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </header>
+
+<main class="bg-light">
+
+    <!-- Servicios -->
+    <section class="servicios container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-4">
+          <a class="" href="#">
+            <div class="iconService">
+              <img src="assets/img/teleconsulta.png" alt="" class="img-fluid">
+            </div>
+            <div class="nameService">
+              <span>TELECONSULTAS </span>
+              <p>011-2117-9484</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-4">
+          <a class="" href="#">
+            <div class="iconService">
+              <img src="assets/img/visita.png" alt="" class="img-fluid">
+            </div>
+            <div class="nameService">
+              <span>VISITAS DOMICILIARIAS </span>
+              <p>0230-442-0707</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-4">
+          <a class="" href="#">
+            <div class="iconService">
+              <img src="assets/img/informacion.png" alt="" class="img-fluid">
+            </div>
+            <div class="nameService">
+              <span>INFORMACION</span>
+              <p>0810-333-3162</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-4">
+          <a class="" href="#">
+            <div class="iconService">
+              <img src="assets/img/turnos.png" alt="" class="img-fluid">
+            </div>
+            <div class="nameService">
+              <span>TURNOS</span>
+              <p>0230-442-0707</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-4" id="serviceAtencion">
+          <a class="" href="#">
+            <div class="iconService mt-2">
+              <img src="assets/img/atencion.png" alt="" class="img-fluid">
+            </div>
+            <div class="nameService mt-2 mr-1">
+              <span class="mt-2 atencionAsociado">ATENCION AL ASOCIADO</span>
+              <!-- <p class="infoEmail d-block d-md-none">diabetespilar<br>@nutridia.com.ar</p> -->
+              <p class="infoEmail">diabetespilar@nutridia.com.ar</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-4">
+          <a class="" href="#">
+            <div class="iconService">
+              <img src="assets/img/productos.png" alt="" class="img-fluid">
+            </div>
+            <div class="nameService">
+              <span>PRODUCTOS</span>
+              <p class="infoEmail">club@nutrida.com.ar</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- services circular -->
+    <section class="servicioCircular">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-6 mt-5 d-flex justify-content-center">
+            <a href="">
+              <img src="assets/img/iconos/sesion_home.png" alt="" class="img-fluid d-none d-md-block">
+              <img src="assets/img/iconos/sesion_home.png" alt="" class="img-fluid d-md-none">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6 mt-5 d-flex justify-content-center">
+            <a href="">
+              <img src="assets/img/iconos/turnos_home.png" alt="" class="img-fluid d-none d-md-block">
+              <img src="assets/img/iconos/turnos_home.png" alt="" class="img-fluid  d-md-none">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6 mt-5 d-flex justify-content-center">
+            <a href="">
+              <img src="assets/img/iconos/video_consulta_home.png" alt="" class="img-fluid d-none d-md-block">
+              <img src="assets/img/iconos/video_consulta_home.png" alt="" class="img-fluid  d-md-none">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6 mt-5 d-flex justify-content-center">
+            <a href="">
+              <img src="assets/img/iconos/club_home.png" alt="" class="img-fluid d-none d-md-block">
+              <img src="assets/img/iconos/club_home.png" alt="" class="img-fluid  d-md-none">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6 mt-5 d-flex justify-content-center">
+            <a href="">
+              <img src="assets/img/iconos/productos_home.png" alt="" class="img-fluid d-none d-md-block">
+              <img src="assets/img/iconos/productos_home.png" alt="" class="img-fluid d-md-none">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6 mt-5 d-flex justify-content-center">
+            <a href="">
+              <img src="assets/img/iconos/pagos_home.png" alt="" class="img-fluid d-none d-md-block">
+              <img src="assets/img/iconos/pagos_home.png" alt="" class="img-fluid  d-md-none">
+            </a>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-12 mt-4 text-center p-0">
+            <b>
+              <p style=" font-size: 0.9rem;
+              margin-bottom: 0;">CONOCE CUAL ES TU RIESGO DE PADECER DIABETES</p>
+            </b>
+            <a href="">
+              <img src="assets/img/iconos/btn_test.png" alt="" class="img-fluid mx-auto d-block">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Info  -->
+
+    <section class="mt-5 infoSection">
+      <div class="container-fluid m-0">
+
+
+        <div class="row ">
+          <img src="assets/img/monitoreoFondo.jpg" alt="" class="img-fluid d-none d-md-block" style="width: 100%;">
+          <img src="assets/img/flechaAbajo.png" alt="" class="img-fluid d-md-none flechaAbajo" style="width: 100%;">
+          <div class="infoCard">
+            <h5 class="infotitleCard">MONITOREO <br> CARDIOMETABOLICO</h5>
+            <p class="infosubtitleCard font-weight-bold text-justify" style="padding: 1em 2em;">
+              Permite al paciente interactuar con la plataforma en tiempo real, para intercambiar datos clinicos con el
+              equipo de salud desde diferentes dispositivos.
+            </p>
+            <div class="pcard">
+              <span class="d-flex justify-content-center text-justify">
+                <span class="text-primary font-weight-bold pr-2">></span>
+                Esta herramienta digital monitoriza el progreso del tratamiento a traves del intercambio de informacion
+                clinica en tiempo real.
+              </span>
+              <span class="d-flex justify-content-center mt-2 text-justify">
+                <span class="text-primary font-weight-bold pr-2">></span>
+                Genera conciencia de la importancia de la cotidianeidad de este, permitiendo a su vez, el empoderamiento
+                del paciente en su tratamiento.
+              </span>
+            </div>
+          </div>
+          <img src="assets/img/monitoreo_movile.jpg" alt="" class="img-fluid d-md-none" style="width: 100%;">
+
+        </div>
+
+
+
+        <div class="row">
+          <img src="assets/img/calculadoraFondo.jpg" alt="" class="img-fluid d-none d-md-block" style="width: 100%;">
+          <img src="assets/img/flechaAbajo.png" alt="" class="img-fluid d-md-none flechaAbajo" style="width: 100%;">
+          <div class="infoCard secondCard">
+            <h5 class="infotitleCard">CALCULADORA <br> NUTRIDA</h5>
+            <img src="assets/img/plato.png" alt="" class="img-fluid">
+            <p class="infosubtitleCard font-weight-bold text-justify" style="padding: 1em 2em 0 2em; clear: both;">
+              Desde nuestra Historia Clinica integrada, diseñamos un plan de alimentacion de acuerdo a la necesidad de
+              cada persona que permita ser una dieta suficiente, equilibrada, variada y moderada que contemple sus
+              gustos, costumbres y capacidad socioeconomica.
+            </p>
+            <div class="pcard">
+              <span class="d-flex justify-content-center text-justify">
+                <span class="text-primary font-weight-bold pr-2">></span>
+                La Calculadora Nutrida es una herramienta digital de facil utilizacion que permite a los usuarios
+                preparar un menu libre generando calculos automaticos por ejemplo: Kcal; Macronutrientes; Insulina
+                prandial; etc.
+              </span>
+              <span class="d-flex justify-content-center mt-2 text-justify">
+                <span class="text-primary font-weight-bold pr-2">></span>
+                Con nuetro metodo innovador te ayudamos a crear tu propio menu y hacer una sola comida para toda la
+                familia sin perder el control.
+              </span>
+            </div>
+          </div>
+          <img src="assets/img/calculadora_movile.jpg" alt="" class="img-fluid d-md-none" style="width: 100%;">
+        </div>
+      </div>
+    </section>
+
+    <!-- PORQUE ELEGIR -->
+    <section class="whySection">
+      <div class="container-fluid ">
+        <div class="row">
+
+
+          <div class="container whyContainer ">
+            <div class="row whyContainerRow ">
+              <div class="col-12">
+                <h2 class="text-white mt-4 titleWhy">¿Por que elegir Nutridia?</h2>
+              </div>
+              <div class="col-md-5 mt-5">
+                <h3 class="text-white h3paciente">Para el paciente</h3>
+                <ul class="izquierda text-white">
+                  <li class="item d-flex flex-direction-column text-white mb-5">
+                    <div class="item-content ">
+                      <h6>Gestion</h6>
+                      <p class="">Ofrecemos un solo lugar donde puedas gestionar tu sald y la de toda tu familia.</p>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/img/paciente.png" alt="Paciente">
+                    </div>
+                  </li>
+                  <li class="item d-flex flex-direction-column mb-5">
+                    <div class="item-content ">
+                      <h6>Economico</h6>
+                      <p class="">Disminuye los gastos de traslados y tiempos de espera cuando no fueran necesarios.</p>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/img/economico.png" alt="Economico">
+                    </div>
+                  </li>
+                  <li class="item d-flex flex-direction-column  mb-5">
+                    <div class="item-content ">
+                      <h6>Comodo</h6>
+                      <p class="">Acceso mas rapido y efectivo a tus datos clinicos ingresando tu usuario desde
+                        cualquier dispositivo.</p>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/img/comodo.png" alt="Comodidad">
+                    </div>
+                  </li>
+                  <li class="item d-flex flex-direction-column">
+                    <div class="item-content ">
+                      <h6>Preventiva educativa</h6>
+                      <p class="">Posibilita el seguimiento y control a traves del intercambio de informacion clinica en
+                        tiempo real.</p>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/img/preventiva.png" alt="Preventa">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-5 mt-5">
+                <h3 class="text-white h3profesional">Para el Profesional</h3>
+                <ul class="derecha text-white">
+                  <li class="item d-flex flex-direction-column mb-3">
+                    <div class="icon float-left">
+                      <img src="assets/img/profesional.png" alt="Profesional">
+                    </div>
+                    <div class="item-content">
+                      <h6>Historia Clinica</h6>
+                      <p class="text-justify">Mejora el tiempo y la comunicacion con el equipo de salud, centralizando
+                        la informacion e intercambio de opiniones con otras especialidades en tiempo real.</p>
+                    </div>
+                  </li>
+                  <li class="item d-flex flex-direction-column  mb-3">
+                    <div class="icon">
+                      <img src="assets/img/comodo.png" alt="Integracion">
+                    </div>
+                    <div class="item-content ">
+                      <h6>Integracion</h6>
+                      <p class="text-justify">Optimiza los sistemas de procesos al ser intuitiva, participativa basada
+                        en algoritmos.</p>
+                    </div>
+                  </li>
+                  <li class="item d-flex flex-direction-column mb-3">
+                    <div class="icon">
+                      <img src="assets/img/seguro.png" alt="Seguro">
+                    </div>
+                    <div class="item-content ">
+                      <h6>Seguro</h6>
+                      <p class="text-justify">Facilita la toma de decisiones basada en el intercambio de datos clinicos
+                        solidos con el paciente. Permitiendo diagnosticos y tratamientos mas rapidos.</p>
+                    </div>
+                  </li>
+                  <li class="item d-flex flex-direction-column">
+                    <div class="icon">
+                      <img src="assets/img/seguimiento.png" alt="seguimiento">
+                    </div>
+                    <div class="item-content ">
+                      <h6>Seguimiento</h6>
+                      <p class="text-justify">Identifica rapidamente a los pacientes que presentan inconvenientes con
+                        los objetivos clinicos y ofrece una oportunidad de planificar y consensuar el tratamiento.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <img src="assets/img/nutridia.jpg" alt="Nutridia Celular" style="width: 100%;">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+
+    <!-- Contacto -->
+    <section class="container contacto">
+      <div class="row">
+        <div class="col-md-6 mt-5  mb-4">
+          <form>
+            <div class="form-group">
+              <h2 class="text-light">Consultanos!</h2>
+              <h4 class="text-light font-weight-light mb-5">Estamos para responder todas tus dudas.</h4>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Mensaje"></textarea>
+            </div>
+          </form>
+        </div>
+
+
+        <!-- Preguntas frecuentes -->
+        <div class="col-md-6 mt-5">
+          <div id="accordion" class="card">
+            <div class="card border-0 rounded-0">
+              <div class="card-header bg-light">
+                <h5 class="mb-2 titlePreguntasFrec font-weight-bold font-size">
+                  Preguntas Frecuentes
+                </h5>
+              </div>
+            </div>
+
+            <div class="card border-0 rounded-0">
+              <div class="card-header bg-light" id="headingOne">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    Porque elegir <b>Nutridia</b>
+                    <img src="assets/img/flecha.png" alt="flecha derecha" class="float-right mr-4 flechaCollapse">
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0 rounded-0">
+              <div class="card-header bg-light" id="headingTwo">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Porque elegir <b>Nutridia</b>
+                    <img src="assets/img/flecha.png" alt="flecha derecha" class="float-right mr-4 flechaCollapse">
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0">
+              <div class="card-header bg-light" id="headingThree">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Porque elegir <b>Nutridia</b>
+                    <img src="assets/img/flecha.png" alt="flecha derecha" class="float-right mr-4 flechaCollapse">
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 rounded-0">
+              <div class="card-header bg-light" id="headingO">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-target="#collapseO" aria-expanded="false"
+                    aria-controls="collapseO">
+                    Porque elegir <b>Nutridia</b>
+                    <img src="assets/img/flecha.png" alt="flecha derecha" class="float-right mr-4 flechaCollapse">
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseO" class="collapse" aria-labelledby="headingO" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Fin col preguntas frecuentes-->
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="map mt-4">
+      <div class="col-12 p-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.6660959106143!2d-58.913784684774164!3d-34.46062298049683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9ccfae95761d%3A0xf14708000220e11d!2sItuzaing%C3%B3%20820%2C%20B1629%20Pilar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1594243997243!5m2!1ses-419!2sar"
+          width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </section>
+
+    <section class="footerTop">
+      <div class="container">
+        <div class="row pt-4 pb-2">
+          <div class="col-6 pl-100">
+            <span class="text-dark font-weight-bold d-block">info@nutridia.com</span>
+            <span class="text-dark font-weight-bold d-block direccionFooter">Ituzaingo 820, 1629, Pilar - Buenos Aires -
+              Argentina</span>
+          </div>
+          <div class="col-6">
+            <div class="logoFooter">
+              <img src="assets/img/logo_2.png" alt="" class="img-fluid">
+            </div>
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footerBot d-none d-md-block">
+
+    </section>
+
+
+  </footer>
+
+
+
+
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- iconos -->
+  <script src="https://kit.fontawesome.com/f38737c7bd.js" crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
