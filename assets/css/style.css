@@ -21,9 +21,12 @@
 :root{
     --primary:#003399;
     --secondary:#3399cc;
-    --gray:#333333;
-    --grayBold:#666666;
-    --yellow:#99cc33;
+    --gray:#666666;
+    --grayBold:#333333;
+    --green:#99cc33;
+    --red:#c90e4f;
+    --orange:#e74d1d;
+    --yellow:#f8b010;
 }
 
 
@@ -91,7 +94,7 @@
 .form-box h4{
     font-size: 28px;
     font-weight: 600;
-    color: var(--grayBold);
+    color: var(--gray);
 }
 
 .input-group-text{
@@ -111,7 +114,7 @@
 }
 
 .btn:hover{
-    background-color: var(--yellow);
+    background-color: var(--green);
     color: #fff !important;
 }
 
@@ -120,8 +123,31 @@
     font-family: UniversBold;
     color: #fff !important;
 }
-.colorear{
+
+.btn-form-outline{
+    background-color:transparent;
+    color:var(--primary);
+    border: 1px solid var(--primary); 
+}
+
+.btn-red{
+    background-color: var(--red) !important;
+}
+.btn-orange{
+    background-color: var(--orange) !important;
+}
+.btn-green{
+    background-color: var(--green) !important;
+}
+.btn-yellow{
     background-color: var(--yellow) !important;
+}
+.btn-secondary{
+    background-color: var(--secondary) !important;
+}
+
+.colorear{
+    background-color: var(--gray) !important;
 }
 
 #pass{
@@ -167,7 +193,7 @@ a{
     cursor: pointer;
 }
 .button:hover{
-    background-color: var(--yellow);
+    background-color: var(--green);
     color:#fff;
 }
 
@@ -188,6 +214,41 @@ a{
     font-size: .9em;
     margin: 0 auto;
 }
+
+/* icono dentro de input */
+.inner-addon {
+    position: relative;
+  }
+  .inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    color: var(--gray);
+  }
+  /* icono izquierda */
+  .left-addon .glyphicon {
+    left: 0px;
+  }
+  .left-addon input {
+    padding-left: 30px;
+  }
+
+  /* icono a la derecha */
+  .right-addon .glyphicon {
+    right: 0px;
+  }
+  
+  .right-addon input {
+    padding-right: 30px;
+  }
+
+
+.margenes{
+    margin-top: 10% !important;
+}
+
+
+
 /* fin register */
 
 
@@ -210,6 +271,7 @@ a{
   align-items: center;
   justify-content: center;
   background-color: var(--primary);
+  opacity: .8;
 }
  .nav-item.side-item{
   width: 100%;
@@ -232,7 +294,7 @@ a{
     width: 25px;
 }
  .nav-link.side-link:hover{
-  color:var(--yellow)
+  color:var(--green)
 }
 .link-text{
     display: none;
@@ -491,11 +553,11 @@ ul{
      .card-header > h5 > a{
         cursor: pointer;
         font-size: 16px;
-        color: var(--grayBold) !important;
+        color: var(--gray) !important;
     }
     .card-body{
         font-size: 14px;
-        color: var(--grayBold) !important;
+        color: var(--gray) !important;
     }
     .titlePreguntasFrec{
         color: var(--secondary);
@@ -512,7 +574,7 @@ ul{
      }
      .footerBot{
         height:50px;
-        background-color: var(--grayBold);
+        background-color: var(--gray);
      }
      .direccionFooter{
         font-size: .8em;
@@ -557,9 +619,23 @@ ul{
      }
      
 }
+@media (max-width:450px){
+    .btn-tipo{
+        width: 7em !important;
+        font-size: .9em;
+    }
+    .btn-tratamiento{
+        width: 7em !important;
+        font-size: .75em;
+    }
+    .btn-antecedente{
+        width: 11em !important;
+        font-size: .9em;
+    }
+}
 
 @media(max-width:768px){
-  
+      
     .navButtonMobile{
         width: 300px;
      }
@@ -775,6 +851,13 @@ ul{
   
 
 @media (min-width:768px) and (max-width:1024px){
+    .btn-tipo, .btn-antecedente,.btn-tratamiento, .btn-tengo, .btn-volver{
+        width: 7em !important;
+        font-size: .6em;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     .cardSlide{
         top: 8%;
         height: 70%;
@@ -969,6 +1052,19 @@ ul{
 
 
 @media (min-width:1024px){
+    /* buttons form register paciente */
+    .btn-tipo{
+        width: 7em !important;
+        font-size: .9em;
+    }
+    .btn-tratamiento{
+        width: 7em !important;
+        font-size: .75em;
+    }
+    .btn-antecedente{
+        width: 11em !important;
+        font-size: .9em;
+    }
     /* informacion */
     .infoCard{
         margin: 4rem;
@@ -981,6 +1077,19 @@ ul{
 }
 
 @media (min-width:1300px){
+     /* buttons form register paciente */
+     .btn-tipo{
+        width: 15em!important;
+        font-size: .9em;
+    }
+    .btn-tratamiento{
+        width: 15em!important;
+        font-size: .75em;
+    }
+    .btn-antecedente{
+        width: 15em!important;
+        font-size: .9em;
+    }
     /* informacion */
     .infoCard{
         position: absolute;

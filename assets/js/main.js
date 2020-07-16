@@ -112,15 +112,16 @@ function formularioActivo(opcion) {
 
     var paciente = `<form class="mt-5">
             <div class="row">
-                <div class="col-9">
+                <div class="col-8">
                     <label style="color:var(--primary); font-family: UniversBold; font-size: 1.2em;">
                         Suscripcion Nutridia - Paciente
                     </label>
                 </div>
-                <div class="col-3">
-                    <button class="form-control" onclick(function(){ $('.form-container').removeClass('d-none');$('.form-controls').remove();})>Volver</button>
+                <div class="col-4">
+                    <button class="form-control btn-volver" onclick(function(){ $('.form-container').removeClass('d-none');$('.form-controls').remove();})>Volver</button>
                 </div>
             </div>
+       
             <div class="form-group mt-4">
                 <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
             </div>
@@ -131,10 +132,16 @@ function formularioActivo(opcion) {
                 <input type="number" min="0" class="form-control" id="inputCuil" placeholder="CUIT/CUIL">
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Mail">
+                <div class="inner-addon left-addon">
+                    <i class="glyphicon fas fa-envelope"></i>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Mail">
+                </div>
             </div>
             <div class="form-group">
-                <input type="number" class="form-control" id="inputTelefono" placeholder="Telefono Movil">
+                <div class="inner-addon left-addon">
+                    <i class="glyphicon fas fa-phone-alt"></i>
+                    <input type="number" class="form-control" id="inputTelefono" placeholder="Telefono Movil">
+                </div>
             </div>
             <div class="form-group">
                 <label style="color:var(--primary)">Tengo Diabetes</label>
@@ -172,11 +179,11 @@ function formularioActivo(opcion) {
             </div>    
             <div class="form-group">
                 <label style="color:var(--primary)">Tratamiento Actual</label>
-                <div class="d-flex flex-direction-row justify-content-center">
-                    <button type="button" class="btn seg mr-2  btn-tratamiento" id="TratamientoDiabetesDieta" >Dieta</button>
-                    <button type="button" class="btn seg  mr-2 btn-tratamiento" id="TratamientoDiabetesEjercicio" >Ejercicio</button>
-                    <button type="button" class="btn seg mr-2 btn-tratamiento" id="TratamientoDiabetesMedicacion" >Medicacion</button>
-                    <button type="button" class="btn seg btn-tratamiento" id="TratamientoDiabetesInsulina" >Insulina</button>
+                <div class="d-flex flex-direction-row justify-content-center" >
+                    <button type="button" class="btn seg btn-green mr-2  btn-tratamiento" id="TratamientoDiabetesDieta" >Dieta</button>
+                    <button type="button" class="btn seg btn-red mr-2 btn-tratamiento" id="TratamientoDiabetesEjercicio" >Ejercicio</button>
+                    <button type="button" class="btn seg btn-orange mr-2 btn-tratamiento" id="TratamientoDiabetesMedicacion" >Medicacion</button>
+                    <button type="button" class="btn seg btn-yellow btn-tratamiento" id="TratamientoDiabetesInsulina" >Insulina</button>
                 </div>
                 <input type="radio" class="d-none" id="inputTratamientoDiabetesDieta" name="radioTratamientoDiabetes">
                 <input type="radio" class="d-none" id="inputTratamientoDiabetesEjercicio" name="radioTratamientoDiabetes">
@@ -187,13 +194,13 @@ function formularioActivo(opcion) {
             <div class="form-group">
                 <label style="color:var(--primary)">Antecedente</label>
                 <div class="d-flex flex-direction-row justify-content-center">
-                    <button type="button" class="btn seg mr-2 btn-antecedente" id="AntecedenteDiabetesHipertension" >Hipertension</button>
-                    <button type="button" class="btn seg mr-2 btn-antecedente" id="AntecedenteDiabetesHipercolesterolemia" >Hipercolesterolemia</button>
+                    <button type="button" class="btn seg mr-2  btn-green btn-antecedente" id="AntecedenteDiabetesHipertension" >Hipertension</button>
+                    <button type="button" class="btn seg mr-2 btn-red btn-antecedente" id="AntecedenteDiabetesHipercolesterolemia" >Hipercolesterolemia</button>
                 </div>
                 <div class="d-flex flex-direction-row justify-content-center mt-2">
-                    <button type="button" class="btn seg  mr-2 btn-antecedente" id="AntecedenteDiabetesACV" >ACV</button>
-                    <button type="button" class="btn seg mr-2 btn-antecedente" id="AntecedenteDiabetesAlergias" >Alergias</button>
-                    <button type="button" class="btn seg btn-antecedente" id="AntecedenteDiabetesOtro" >Otros</button>
+                    <button type="button" class="btn seg  mr-2 btn-orange btn-antecedente" id="AntecedenteDiabetesACV" >ACV</button>
+                    <button type="button" class="btn seg mr-2 btn-secondary btn-antecedente" id="AntecedenteDiabetesAlergias" >Alergias</button>
+                    <button type="button" class="btn seg btn-yellow btn-antecedente" id="AntecedenteDiabetesOtro" >Otros</button>
                 </div>
                 <input type="radio" class="d-none" id="inputAntecedenteDiabetesHipertension" name="radioAntecedenteDiabetes">
                 <input type="radio" class="d-none" id="inputAntecedenteDiabetesHipercolesterolemia" name="radioAntecedenteDiabetes">
@@ -203,7 +210,7 @@ function formularioActivo(opcion) {
                 
             </div>
             <div class="form-group">
-                <label style="font-size:.6em;color:var(--grayBold); margin-top:1em; display:flex; flex-wrap: nowrap; ">
+                <label style="font-size:.6em;color:var(--gray); margin-top:1em; display:flex; flex-wrap: nowrap; ">
                     Una copia de tus respuestas se enviara por correo electronico a la direccion que proporcionaste
                 </label>
             </div>
@@ -214,13 +221,13 @@ function formularioActivo(opcion) {
     
             var profesional = `<form class="mt-5">
             <div class="row">
-                <div class="col-9">
+                <div class="col-8">
                     <label style="color:var(--primary); font-family: UniversBold; font-size: 1.2em;">
                         Suscripcion Nutridia - Profesional
                     </label>
                 </div>
-                <div class="col-3">
-                    <button class="form-control" onclick(function(){ $('.form-container').removeClass('d-none');$('.form-controls').remove();})>Volver</button>
+                <div class="col-4">
+                    <button class="form-control  btn-volver" onclick(function(){ $('.form-container').removeClass('d-none');$('.form-controls').remove();})>Volver</button>
                 </div>
             </div>
             <div class="form-group mt-4">
@@ -233,14 +240,21 @@ function formularioActivo(opcion) {
                 <input type="number" min="0" class="form-control" id="inputCuil" placeholder="CUIT/CUIL">
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Mail">
+                <div class="inner-addon left-addon">
+                    <i class="glyphicon fas fa-envelope"></i>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Mail">
+                </div>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="inputMatricula" placeholder="Matricula">
+            <div class="inner-addon left-addon">
+                    <i class="glyphicon fas fa-id-card"></i>
+                    <input type="number" min="0" class="form-control" id="inputMatricula" placeholder="Matricula">
+                </div>
+                
             </div>
                 
             <div class="form-group">
-                <label style="font-size:14px;color:var(--grayBold); margin-top:1em; display:flex; flex-wrap: nowrap; ">
+                <label style="font-size:14px;color:var(--gray); margin-top:1em; display:flex; flex-wrap: nowrap; ">
                     Una copia de tus respuestas se enviara por correo electronico a la direccion que proporcionaste
                 </label>
             </div>         
@@ -277,7 +291,9 @@ function check(opcion) {
     $('.form-controls').append(formularioActivo(opcion));
     
     colorearBoton();
-
+    if (opcion == 'paciente') {
+        $('#registerImg').addClass('margenes');
+    }
     //si la opcion ya estaba seleccionada
     if ($('#' + opcion).prop("checked")) {
         // la deselecciono
