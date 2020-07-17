@@ -6,7 +6,7 @@ $('#pass').click(() => {
     if ($('#password').get(0).type == 'text') {
         $('#password').get(0).type = 'password';
         $('.right-icon').removeClass('fa-eye-slash').addClass('fa-eye');
-    }    
+    }
     //si era password lo cambio a text y cambio al icono del ojo con raya
     else {
         $('#password').get(0).type = 'text';
@@ -24,91 +24,175 @@ function verificacionCheck() {
         //si es version mobile muestro la calculadora mobile y oculto la desktop
         if ($(window).width() < 768) {
             $('#calculadoraImg').addClass('d-none');
-            
+
         }//caso contrario oculto la mobile y muestro desktop
         else {
             $('#calculadoraImg').removeClass('d-none');
 
         }
-        
+
     }//si la opcion no era dietetica o restaurante oculto ambas
     else {
-            
+
         $('#calculadoraImg').addClass('d-none');
     }
 }
 
+function colorearBotonTest(id) {
+    // $('#input'+id).attr('checked', true);
+        // alert('input'+id)
+        switch (id) {
+            case 'Edad1':
+            case 'Edad2':
+            case 'Edad3':
+            case 'Edad4':
+                $('.btn-tengo-test').each(function(){
+                    $(this).removeClass('colorear');
+                });                
+                $('#'+id).addClass('colorear')
+                $('#inputEdad1').attr('checked', false);
+                $('#inputEdad2').attr('checked', false);
+                $('#inputEdad3').attr('checked', false);
+                $('#inputEdad4').attr('checked', false);
+                $('#input'+id).attr('checked', true);
+                break;
+            case 'Peso1':
+            case 'Peso2':
+            case 'Peso3':
+                $('.btn-peso-test').each(function(){
+                    $(this).removeClass('colorear');
+                });                
+                $('#'+id).addClass('colorear')
+                $('#inputPeso1').attr('checked', false);
+                $('#inputPeso2').attr('checked', false);
+                $('#inputPeso3').attr('checked', false);
+                $('#input'+id).attr('checked', true);
+            break;
+            case 'ActividadFisica1':
+            case 'ActividadFisica2':
+                $('.btn-fisica-test').each(function(){
+                    $(this).removeClass('colorear');
+                });                
+                $('#'+id).addClass('colorear')
+                $('#inputActividadFisica1').attr('checked', false);
+                $('#inputActividadFisica2').attr('checked', false);
+                $('#input'+id).attr('checked', true);
+            break;
+            case 'Verduras1':
+            case 'Verduras2':
+                $('.btn-frecuencia-test').each(function(){
+                    $(this).removeClass('colorear');
+                });                
+                $('#'+id).addClass('colorear')
+                $('#inputVerduras1').attr('checked', false);
+                $('#inputVerduras2').attr('checked', false);
+                $('#input'+id).attr('checked', true);
+            break;
+            case 'Hipertension1':
+            case 'Hipertension2':
+                $('.btn-medicacion-test').each(function(){
+                    $(this).removeClass('colorear');
+                });                
+                $('#'+id).addClass('colorear')
+                $('#inputHipertension1').attr('checked', false);
+                $('#inputHipertension2').attr('checked', false);
+                $('#input'+id).attr('checked', true);
+            break;
+            case 'Glucosa1':
+            case 'Glucosa2':
+                $('.btn-glucosa-test').each(function(){
+                    $(this).removeClass('colorear');
+                });                
+                $('#'+id).addClass('colorear')
+                $('#inputGlucosa1').attr('checked', false);
+                $('#inputGlucosa2').attr('checked', false);
+                $('#input'+id).attr('checked', true);
+                break;
+            case 'DiagnosticoDiabetes1':
+            case 'DiagnosticoDiabetes2':
+            case 'DiagnosticoDiabetes3':
+                $('.btn-diabetes-test').each(function(){
+                    $(this).removeClass('colorear');
+                });                
+                $('#'+id).addClass('colorear')
+                $('#inputDiagnosticoDiabetes1').attr('checked', false);
+                $('#inputDiagnosticoDiabetes2').attr('checked', false);
+                $('#inputDiagnosticoDiabetes3').attr('checked', false);
+                $('#input'+id).attr('checked', true);
+            break;
+       } 
 
+}
 
 function colorearBoton() {
-    $('button').click(function(){
-          
-        switch(this.id){
+    $('button').click(function () {
+
+        switch (this.id) {
             case 'DiabetesSi':
             case 'DiabetesNo':
             case 'DiabetesPre':
             case 'DiabetesOtro':
-                $('.btn-tengo').each(function(){
+                $('.btn-tengo').each(function () {
                     $(this).removeClass('colorear');
-                });                
+                });
                 $(this).addClass('colorear')
                 $('#inputDiabetesSi').attr('checked', false);
                 $('#inputDiabetesNo').attr('checked', false);
                 $('#inputDiabetesPre').attr('checked', false);
                 $('#inputDiabetesOtro').attr('checked', false);
-                $('#input'+this.id).attr('checked', true);
-            break;
+                $('#input' + this.id).attr('checked', true);
+                break;
             case 'TipoDiabetes1':
             case 'TipoDiabetes2':
             case 'TipoDiabetesGestacional':
             case 'TipoDiabetesOtro':
-                $('.btn-tipo').each(function(){
+                $('.btn-tipo').each(function () {
                     $(this).removeClass('colorear');
-                });                
+                });
                 $(this).addClass('colorear')
                 $('#inputTipoDiabetes1').attr('checked', false);
                 $('#inputTipoDiabetes2').attr('checked', false);
                 $('#inputTipoDiabetesGestacional').attr('checked', false);
                 $('#inputTipoDiabetesOtro').attr('checked', false);
-                $('#input'+this.id).attr('checked', true);
-            break;
+                $('#input' + this.id).attr('checked', true);
+                break;
             case 'TratamientoDiabetesDieta':
             case 'TratamientoDiabetesEjercicio':
             case 'TratamientoDiabetesMedicacion':
             case 'TratamientoDiabetesInsulina':
-                $('.btn-tratamiento').each(function(){
+                $('.btn-tratamiento').each(function () {
                     $(this).removeClass('colorear');
-                });                
+                });
                 $(this).addClass('colorear')
                 $('#inputTratamientoDiabetesDieta').attr('checked', false);
                 $('#inputTratamientoDiabetesEjercicio').attr('checked', false);
                 $('#inputTratamientoDiabetesMedicacion').attr('checked', false);
                 $('#inputDiabetesInsulina').attr('checked', false);
-                $('#input'+this.id).attr('checked', true);
-            break;
+                $('#input' + this.id).attr('checked', true);
+                break;
             case 'AntecedenteDiabetesHipertension':
             case 'AntecedenteDiabetesHipercolesterolemia':
             case 'AntecedenteDiabetesACV':
             case 'AntecedenteDiabetesAlergias':
             case 'AntecedenteDiabetesOtro':
-                $('.btn-antecedente').each(function(){
+                $('.btn-antecedente').each(function () {
                     $(this).removeClass('colorear');
-                });                
+                });
                 $(this).addClass('colorear')
                 $('#inputAntecedenteDiabetesHipertension').attr('checked', false);
                 $('#inputAntecedenteDiabetesHipercolesterolemia').attr('checked', false);
                 $('#inputAntecedenteDiabetesACV').attr('checked', false);
                 $('#inputAntecedenteDiabetesAlergias').attr('checked', false);
                 $('#inputAntecedenteDiabetesOtro').attr('checked', false);
-                $('#input'+this.id).attr('checked', true);
-            break;
+                $('#input' + this.id).attr('checked', true);
+                break;
         }
     });
 }
 
 
 function formularioActivo(opcion) {
-    
+
 
     var paciente = `<form class="mt-5">
             <div class="row">
@@ -214,12 +298,12 @@ function formularioActivo(opcion) {
                     Una copia de tus respuestas se enviara por correo electronico a la direccion que proporcionaste
                 </label>
             </div>
-            <button type="submit" class="btn mb-4 mt-4 float-right">Revisar y Enviar</button>
+            <button type="submit" class="btn mb-4 mt-4 float-right" style="width:25%;">Enviar</button>
             </form> `;
-    
-    
-    
-            var profesional = `<form class="mt-5">
+
+
+
+    var profesional = `<form class="mt-5">
             <div class="row">
                 <div class="col-8">
                     <label style="color:var(--primary); font-family: UniversBold; font-size: 1.2em;">
@@ -258,28 +342,27 @@ function formularioActivo(opcion) {
                     Una copia de tus respuestas se enviara por correo electronico a la direccion que proporcionaste
                 </label>
             </div>         
-            <button type="button" class="btn mb-2 mt-4 float-right" style="width:60%">Subir Archivo</button>
            
-            <button type="submit" class="btn mb-4  float-right" style="width:60%">Revisar y Enviar</button>
+            <button type="submit" class="btn mb-4 float-right" style="width:25%">Enviar</button>
             </form> `;
-    
-    
-    
 
-            switch (opcion) {
-                case 'paciente':
-                    return paciente;
-                    break;
-                    case 'profesional':
-                        return profesional;
-                        break;
-                default:
-                    $('.form-container').removeClass('d-none');
-                    $('.form-controls').addClass('d-none');
-                    return "";
-                    break;
-            }
-    
+
+
+
+    switch (opcion) {
+        case 'paciente':
+            return paciente;
+            break;
+        case 'profesional':
+            return profesional;
+            break;
+        default:
+            $('.form-container').removeClass('d-none');
+            $('.form-controls').addClass('d-none');
+            return "";
+            break;
+    }
+
 }
 
 
@@ -289,7 +372,7 @@ function check(opcion) {
     $('.form-container').addClass('d-none');
     $('.form-controls').removeClass('d-none');
     $('.form-controls').append(formularioActivo(opcion));
-    
+
     colorearBoton();
     if (opcion == 'paciente') {
         $('#registerImg').addClass('margenes');
@@ -306,17 +389,17 @@ function check(opcion) {
         }//si no es dietetica o restaurante 
         else {
             $('#calculadoraImg').removeClass('d-none');
-            
+
         }
     }//en caso de que la opcion no estaba seleccionada
     else {
         //deselecciono para resetear
         deseleccionarTodo();
         //cambio la imagen en ambos contenedores (mobile y desktop)
-        $("#registerImg").attr("src","assets/img/Registro/img_"+opcion+".jpg");
+        $("#registerImg").attr("src", "assets/img/Registro/img_" + opcion + ".jpg");
         $("#registerImg2").attr("src", "assets/img/Registro/img_" + opcion + "_mobile.jpg");
         //selecciono la opcion
-        $('#'+opcion).prop("checked", true);
+        $('#' + opcion).prop("checked", true);
         $('#btn-' + opcion).addClass('colorear');
         //si es dietetica o restaurante muestro la calculadora
         if (opcion == 'restaurante' || opcion == 'dietetica') {
@@ -329,9 +412,9 @@ function check(opcion) {
         else {
             $('#calculadoraImg').addClass('d-none');
         }
-    }   
+    }
     // $('#form-box').addClass('d-none');
-    
+
     // $('#form-control').removeClass('d-none');
 }
 //desmarcar todos los checkboxs

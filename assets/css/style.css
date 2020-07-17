@@ -148,6 +148,7 @@
 
 .colorear{
     background-color: var(--gray) !important;
+    color: #fff !important;
 }
 
 #pass{
@@ -251,6 +252,55 @@ a{
 
 /* fin register */
 
+/* test FINDRISK */
+.title-test{
+    font-family: UniversBold;
+    color:var(--primary);
+    font-size: 1.4em;
+}
+.label-test{
+    font-family: UniversBold;
+    color:var(--primary); 
+}
+.titulo-final-test{
+    font-size: 1.2em;
+}
+.texto-final-test{
+    font-size: .8em;
+}
+.col-form-label{
+    font-family: UniversBold;
+    color:var(--primary);
+}
+.form-check-label{
+    color: var(--gray) !important;
+}
+
+.btn-tengo-test, .btn-peso-test, .btn-frecuencia-test{
+    font-size: .6em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#puntuacionFinal{
+    background-color: var(--primary);
+    color:#fff;
+    border-radius: 15px;
+    padding: 1em;
+    text-align: center;
+    width: 80%;
+    height: 60%;
+}
+#guionesTotal{
+    margin-top: 20%;
+    border-bottom: 1px dashed  #fff;
+}
+
+.divisorTest{
+    border-bottom: 2px solid var(--gray);
+    border-radius: 10%;
+}
+/* FIN TEST */
 
 /* INDEX */
 
@@ -708,6 +758,17 @@ ul{
 
 
 @media (min-width: 768px){
+    /* test */
+    #puntuacionFinal{
+        width: 80%;
+        height: 90%;
+    }
+    .btn-tengo-test, .btn-peso-test, .btn-frecuencia-test{
+        font-size: 1em;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    /* fin test */
 
     /* sidebar */
     .sidebar{
@@ -935,7 +996,12 @@ ul{
 }
 
 @media (min-width: 1025px){
-    
+    .titulo-final-test{
+        font-size: 1.6em;
+    }
+    .texto-final-test{
+        font-size: 1em;
+    }
      /* INDEX */
      
     .cardSlide{

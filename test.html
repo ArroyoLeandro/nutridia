@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrida</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+
+    <div class="container">
+        <form class="my-5">
+            <div class="row">
+                <div class="col-8">
+                    <label class="title-test">
+                        Test de Findrisk
+                    </label>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-form-outline px-1 py-2">Volver</button>
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <label style="color:var(--primary); font-family: UniversBold;">Tengo Diabetes</label>
+                <div class="d-flex flex-direction-row justify-content-center">
+                    <button type="button" class="btn  mr-2 btn-green btn-tengo-test" id="Edad1" onclick="colorearBotonTest('Edad1')">Menos de 45 años (0p.)</button>
+                    <button type="button" class="btn  mr-2 btn-red btn-tengo-test" id="Edad2" onclick="colorearBotonTest('Edad2')">45-54 años (2p.)</button>
+                    <button type="button" class="btn  mr-2 btn-orange btn-tengo-test " id="Edad3" onclick="colorearBotonTest('Edad3')">55-64 años (3p.)</button>
+                    <button type="button" class="btn btn-yellow btn-tengo-test" id="Edad4" onclick="colorearBotonTest('Edad4')">Mas de 64 años (4p.)</button>
+                </div>
+                <input type="radio" class="d-none" id="inputEdad1" name="radioEdad" value="0">
+                <input type="radio" class="d-none" id="inputEdad2" name="radioEdad" value="2">
+                <input type="radio" class="d-none" id="inputEdad3" name="radioEdad" value="3">
+                <input type="radio" class="d-none" id="inputEdad4" name="radioEdad" value="4">
+            <hr class="divisorTest">
+            </div>
+            <label style="color:var(--primary); font-family: UniversBold;">Indice Corporal</label>
+
+            <div class="form-group ">
+                <div class="container row">
+                    <div class="col-4 col-md-2">
+                        <label  class="label-test">Su Peso</label>
+                    </div>
+                    <div class="col-8 col-md-2">
+                        <input type="number" min="0" class="form-control mb-3 input-imc-calculo" id="inputPeso">
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <label  class="label-test">Su Altura</label>
+                    </div>
+                    <div class="col-8 col-md-2">
+                        <input type="number" min="100" class="form-control input-imc-calculo" id="inputAltura">
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <label class="label-test">= Su IMC</label>
+                    </div>
+                    <div class="col-8 col-md-2">
+                        <input type="number" class="form-control input-imc-calculo" id="inputIMC" readonly>
+                    </div>
+                </div>
+              </div>
+            <div class="form-group mt-4">
+                <div class="d-flex flex-direction-row justify-content-center">
+                    <button type="button" class="btn  mr-2 btn-green btn-peso-test" id="Peso1"  onclick="colorearBotonTest('Peso1')">Menos de 25 kg/m2 (0p.)</button>
+                    <button type="button" class="btn  mr-2 btn-red btn-peso-test" id="Peso2"  onclick="colorearBotonTest('Peso2')">Entre 25-30 kg/m2 (1p.)</button>
+                    <button type="button" class="btn  mr-2 btn-orange btn-peso-test" id="Peso3"  onclick="colorearBotonTest('Peso3')">Mayor de 30 kg/m2 (3p.)</button>
+                    <input type="radio" class="d-none" id="inputPeso1" name="radioPeso" value="0">
+                    <input type="radio" class="d-none" id="inputPeso2" name="radioPeso" value="1">
+                    <input type="radio" class="d-none" id="inputPeso3" name="radioPeso" value="3">
+                </div>
+            </div>
+            <hr class="divisorTest">
+            <div class="form-group">
+                <label class="label-test">Parametro de cintura medido por debajo de las costillas
+                    <p class="d-inline" style="font-size: .7rem;"> (normalmente al nivel del ombligo)</p>
+                </label>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-center">
+                        <fieldset class="form-group">
+                            <legend  class="col-form-label col-sm-2 pt-0">Hombres</legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadiosH1" value="">
+                                <label class="form-check-label" for="gridRadiosH1" style="color:var(--grayBold);">
+                                Menos de 94 cm.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadiosH2" value="">
+                                <label class="form-check-label" for="gridRadiosH2" style="color:var(--grayBold);">
+                                Entre 94-102 cm.
+                                </label>
+                            </div>
+                            <div class="form-check disabled">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadiosH3" value="">
+                                <label class="form-check-label" for="gridRadiosH3" style="color:var(--grayBold);">
+                                Mas de 102 cm.
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <fieldset class="form-group">
+                            <legend  class="col-form-label col-sm-2 pt-0">Mujeres</legend>
+                            <div class="form-check ">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadiosM1" value="">
+                                <label class="form-check-label" for="gridRadiosM1" style="color:var(--grayBold);">
+                                Menos de 80 cm.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadiosM2" value="">
+                                <label class="form-check-label" for="gridRadiosM2" style="color:var(--grayBold);">
+                                Entre 80-88 cm.
+                                </label>
+                            </div>
+                            <div class="form-check disabled">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadiosM3" value=""> 
+                                <label class="form-check-label" for="gridRadiosM3" style="color:var(--grayBold);">
+                                Mas de 88 cm.
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>    
+            <hr class="divisorTest">
+            <div class="form-group mt-4">
+                <div class="row">
+                    <div class="form-group col-4 col-md-2">
+                        <img src="https://images.vexels.com/media/users/3/139594/isolated/preview/c56bdcd971c348a97de9d59a7cac8f92-atleta-corriendo-duro-by-vexels.png" alt="" style="max-width: 100px;">
+                    </div>
+                    <div class="form-group col-4 col-md-6">
+                        <label class="label-test">
+                           ¿Realiza habitualmente al menos 30 minutos de actividad fisica, en el trabajo y/o 
+                           en el tiempo libre?
+                        </label>
+                    </div>
+                    <div class="form-group col-4">
+                        <button type="button" class="btn btn-form-outline btn-fisica-test" id="ActividadFisica1" onclick="colorearBotonTest('ActividadFisica1')">Si (0p.)</button>
+                        <button type="button" class="btn btn-form-outline btn-fisica-test mt-2" id="ActividadFisica2" onclick="colorearBotonTest('ActividadFisica2')">No (2p.)</button>
+                        <input type="radio" class="d-none" id="inputActividadFisica1" name="radioActividadFisica" value="0">
+                        <input type="radio" class="d-none" id="inputActividadFisica2" name="radioActividadFisica" value="2">
+                    </div>
+                </div>
+            </div>
+            <hr class="divisorTest">
+            <div class="form-group mt-4">
+                <label class="label-test">
+                    ¿Con que frecuencia comes frutas o verduras?
+                 </label>
+                 <div class="form-group">
+                    <div class="d-flex flex-direction-row justify-content-center">
+                        <button type="button" class="btn  mr-2 btn-frecuencia-test" id="Verduras1" onclick="colorearBotonTest('Verduras1')">Todos los dias (0p.)</button>
+                        <button type="button" class="btn  mr-2 btn-frecuencia-test" id="Verduras2" onclick="colorearBotonTest('Verduras2')">No todos los dias (1p.)</button>
+                        <input type="radio" class="d-none" id="inputVerduras1" name="radioVerdura" value="0">
+                        <input type="radio" class="d-none" id="inputVerduras2" name="radioVerdura" value="1">
+                    </div>
+                </div>
+            </div>
+            <hr class="divisorTest">
+            <div class="form-group mt-4">
+                <div class="row">
+                    <div class="form-group col-4 col-md-2">
+                        <img src="https://i.pinimg.com/originals/a3/18/03/a31803bcf9435bd3b449519091d7acd2.png" alt="" style="max-width: 100px;">
+                    </div>
+                    <div class="form-group col-4 col-md-6">
+                        <label class="label-test">
+                           ¿Toma medicacion para la hipertension regularmente?
+                        </label>
+                    </div>
+                    <div class="form-group col-4">
+                        <button type="button" class="btn btn-form-outline btn-medicacion-test" id="Hipertension1" onclick="colorearBotonTest('Hipertension1')">Si (0p.)</button>
+                        <button type="button" class="btn btn-form-outline btn-medicacion-test mt-2" id="Hipertension2" onclick="colorearBotonTest('Hipertension2')">No (2p.)</button>
+                        <input type="radio" class="d-none" id="inputVerduras1" name="radioHipertension" value="0">
+                        <input type="radio" class="d-none" id="inputVerduras2" name="radioHipertension" value="2">
+                    </div>
+                </div>
+            </div>
+            <hr class="divisorTest">
+            <div class="form-group mt-4">
+                <div class="row">
+                    <div class="form-group col-8">
+                        <label class="label-test">
+                           ¿Le han encontrado alguna vez valores de glucosa altos
+                           <p class="d-inline" style="font-size: .7rem;"> (Ej: en un control medico, durante una enfermedad, durante el embarazo)</p>
+                            ?
+                        </label>
+                    </div>
+                    <div class="form-group col-4">
+                        <button type="button" class="btn btn-form-outline btn-glucosa-test" id="Glucosa1" onclick="colorearBotonTest('Glucosa1')">Si (0p.)</button>
+                        <button type="button" class="btn btn-form-outline btn-glucosa-test mt-2" id="Glucosa2" onclick="colorearBotonTest('Glucosa2')">No (2p.)</button>
+                        <input type="radio" class="d-none" id="inputVerduras1" name="radioGlucosa" value="0">
+                        <input type="radio" class="d-none" id="inputVerduras2" name="radioGlucosa" value="2">
+                    </div>
+                </div>
+            </div>
+            <hr class="divisorTest">
+            <div class="form-group mt-4">
+                <div class="row">
+                    <div class="form-group col-12 col-md-6">
+                        <label class="label-test" style="font-size: 1.3em;">
+                           ¿Se le ha diagnosticado diabetes (tipo 1 o tipo 2) a alguno de sus familiares allegados u otros parientes?
+                        </label>
+                    </div>
+                    <div class="form-group col-4 col-md-2">
+                        <button type="button" class="btn btn-form-outline btn-diabetes-test mt-2" id="DiagnosticoDiabetes1" onclick="colorearBotonTest('DiagnosticoDiabetes1')">No (0p.)</button>
+                        <input type="radio" class="d-none" id="inputDiagnosticoDiabetes1" name="radioDiagnosticoDiabetes" value="0">
+                    </div>
+                    <div class="form-group col-4 col-md-2">
+                        <button type="button" class="btn btn-form-outline btn-diabetes-test mt-2" id="DiagnosticoDiabetes2" onclick="colorearBotonTest('DiagnosticoDiabetes2')" >Si (3p.)</button>
+                        <input type="radio" class="d-none" id="inputDiagnosticoDiabetes2" name="radioDiagnosticoDiabetes" value="3">
+                        <label for="DiagnosticoDiabetes2" class="label-test">Abuelos, Tio, Tia, Primo Hermano</label>
+                    </div>
+                    <div class="form-group col-4 col-md-2">
+                        <button type="button" class="btn btn-form-outline btn-diabetes-test mt-2" id="DiagnosticoDiabetes3" onclick="colorearBotonTest('DiagnosticoDiabetes3')" >Si (5p.)</button>
+                        <input type="radio" class="d-none" id="inputDiagnosticoDiabetes3" name="radioDiagnosticoDiabetes" value="5">
+                        <label for="DiagnosticoDiabetes3" class="label-test">Padres, Hermanos o Hijos</label>
+                    </div>
+                </div>
+            </div>
+            <hr class="divisorTest">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label id="puntuacionFinal">
+                            Su Puntuacion <br>
+                            Total es:
+                            <br><br>
+                            <p id="guionesTotal"></p>
+                        </label>
+                    </div>
+                    <div class="col-6">
+                       <label class="label-test titulo-final-test">
+                        ESCALA DE RIESGO TOTAL: <br>
+                        (Mas de 14 puntos es riesgo de diabetes).
+                       </label>
+                       <label class="label-test texto-final-test" >
+                           El test FINDRISK no puede realizar un diagnostico medico. <br>
+                           Por ese motivo, deberia consultar con su medico el resultado obtenido.
+                       </label>
+                    </div>
+                </div>
+            </div>
+        </form> 
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/f38737c7bd.js" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+
+
+function calcularIMC(){
+    var altura = $('#inputAltura').val();
+    var peso = $('#inputPeso').val()
+    //para calcular altura con punto  
+    // var imc = peso/Math.pow(altura,2);  
+    //     imc = Math.round(imc*100)/100; 
+    //calcular altura sin punto
+    altura = eval(altura)/100;
+    peso = eval(peso);
+    var imc = altura * altura;
+    imc= Math.round(peso * 10 / imc) / 10;
+    if(peso != null && altura != null ){
+        $('#inputIMC').val(imc);
+    }
+    else{
+        $('#inputIMC').val(0);
+    }
+}
+$('#inputAltura').change(()=>calcularIMC());
+$('#inputAltura').keyup(()=>calcularIMC());
+$('#inputPeso').change(()=>calcularIMC());
+$('#inputPeso').keyup(()=>calcularIMC());
+
+    </script>
+
+</body>
+</html>
